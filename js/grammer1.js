@@ -26,7 +26,8 @@ ${str}に
 対応`;
 console.log(text);
 
-// 4.オブジェクトリテラル
+// 4.オブジェクト型(プリミティブ型以外)
+// オブジェクトリテラル
 const obj = {
     key1: 'value1',
     key2: 'value2'
@@ -35,7 +36,7 @@ console.log(typeof obj) ;
 console.log(obj.key1); // ドット記法(こちらの方が好き)
 console.log(obj['key2']); // ブラケット記法
 
-// 5.配列リテラル
+// 配列リテラル
 const array = ['blue', 'yellow', 'red'];
 console.log(typeof array);
 console.log(array[0]);
