@@ -1,6 +1,6 @@
 // 文法3　関数
 
-// 3-1. 関数宣言
+// 3-1 関数宣言
 function add(a, b) {
     return a + b;
 }
@@ -8,14 +8,14 @@ console.log(add(2, 1));
 // 仮引数より実引数のほうが少ない場合、余った仮引数にはundefinedが代入される
 // 仮引数より実引数のほうが多い場合、余った実引数は無視される
 
-// 3-2. デフォルト引数
+// 3-2 デフォルト引数
 function introduce(name = 'Kuwabara') {
     console.log(`私の名前は${name}です`);
 }
 introduce(); // 実引数が書かれていない場合、デフォルトの値が代入される
 introduce('Yoshino'); // 実引数が書かれている場合、その値が代入される
 
-// 3-3. Rest parameters
+// 3-3 Rest parameters
 // 可変長引数を実現するための方法として、Rest parametersと呼ばれるものがある
 function f(arg1, ...restArgs) {
     console.log(arg1);
@@ -31,7 +31,7 @@ function sum(x, y, z) {
 const numArray = [1, 2, 3];
 console.log(sum(...numArray)); // 配列の各要素を実引数とする
 
-// 3-4. 関数式
+// 3-4 関数式
 // 関数式とは関数を値として変数に代入している式のことである
 // 右辺の関数は名前がないことから無名関数と呼ばれる (addFuncは関数名ではなく変数名)
 // 関数宣言による関数は定義より前の行で呼び出せるが、関数式による関数は定義より前の行では呼び出せない
@@ -42,7 +42,7 @@ const add2 = function(a, b) {
 // ブロックで終わる文にはセミコロン不要だが、無名関数は式であり宣言文の一部なので、これはブロックでない
 console.log(add2(2,3));
 
-// 3-5. Arrow関数
+// 3-5 Arrow関数
 // 関数式はfunctionキーワードを使った書き方の他に、=>を用いたArrow関数と呼ばれる書き方がある
 const introduce2 = (name) => {
     console.log(`私の名前は${name}です`);
@@ -54,8 +54,8 @@ introduce2('Kuwabara');
 const multi = a => a * a;
 console.log(multi(3));
 
-// 3-6. コールバック関数
-// 無名関数を関数の引数として渡すことができる
+// 3-6 コールバック関数
+// 関数を関数の引数として渡すことができる
 // 引数として渡される関数をコールバック関数と呼ぶ
 // コールバック関数は非同期処理でよく用いられる
 function introduce3(callback, name) {
@@ -74,7 +74,7 @@ const fuga = (name) => {
 introduce3(hoge, 'Kuwabara');
 introduce3(fuga, 'Nishikawa');
 
-// 3-7. メソッド
+// 3-7 メソッド
 // オブジェクトのプロパティである関数をメソッドと呼ぶ
 const calc = {
     // key-value の value が無名関数

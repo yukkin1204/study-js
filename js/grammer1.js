@@ -1,11 +1,11 @@
 // 文法1　変数と型
 
-// 1-1.変数
+// 1-1 変数
 const a = '再代入も再定義もできない変数';
 let b = '再代入できるが、再定義できない変数';
 var c = '再代入も再定義もできる変数(非推奨)';
 
-// 1-2.プリミティブ型
+// 1-2 プリミティブ型
 // Boolean, Number, String, undefined, null, Symbol の6種類
 
 console.log(typeof true);
@@ -26,7 +26,7 @@ ${str}に
 対応`;
 console.log(text);
 
-// 1-3.オブジェクト型(プリミティブ型以外)
+// 1-3 オブジェクト型(プリミティブ型以外)
 // オブジェクトリテラル
 const obj = {
     key1: 'value1',
@@ -41,7 +41,7 @@ const array = ['blue', 'yellow', 'red'];
 console.log(typeof array);
 console.log(array[0]);
 
-// 1-4.明示的な型変換
+// 1-4 明示的な型変換
 // 勝手に行われる暗黙的な型変換はなるべく避けよう
 console.log(String(1)); // Number→String
 console.log(Number('1')); // String→Number
